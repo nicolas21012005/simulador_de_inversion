@@ -1,122 +1,134 @@
 @font-face {
-    font-family: 'Montserrat'; 
-    src: url('Montserrat-VariableFont_wght.ttf') format('truetype'); /* Ruta relativa o absoluta de tu archivo .ttf */
+    font-family: 'Montserrat';
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype');
+    /* Ruta relativa o absoluta de tu archivo .ttf */
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    background-color: #181818;
 }
 
-#simulator{
+#simulator {
     width: 100%;
     max-width: 1300px;
     padding: 50px 60px;
-    border: 1px solid #dde0e8;
     margin: 100px auto;
-    box-shadow: 0 0 3em #dfdfdf;
+    box-shadow: 0 0 3em #000000;
+    background: #181818;
 }
 
-h1{
+h1 {
     font-size: 34px;
     font-weight: 700;
-    color: #1c9882;
+    color: #b80000;
     text-align: center;
     padding-bottom: 50px;
-    border-bottom: 2px solid #7a93ab;
+    border-bottom: 2px solid #000000;
 }
 
-.cont-flex{
+.cont-flex {
     width: 100%;
     display: flex;
 }
 
 .left,
-.right{
+.right {
     width: 50%;
     padding: 40px 20px;
 }
 
-h2{
-    color: #202d37;
+h2 {
+    color: #b80000;
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 14px;
 }
 
-.left p{
+.left p {
     margin-bottom: 30px;
-    color: #2f3c46;
+    color: #ffffff;
 }
 
-form{
+form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.group-data.two-columns{
+.group-data.two-columns {
     width: 50%;
     box-sizing: border-box;
 }
-.group-data.one-column{
+
+.group-data.one-column {
     width: 100%;
 }
 
-.group-data.three-columns{
+.group-data.three-columns {
     width: 60%;
 }
 
-.group-data.four-columns{
+.group-data.four-columns {
     width: 40%;
 }
 
-.group-data{
+.group-data {
     padding-right: 16px;
 }
-.group-data label{ 
+
+.group-data label {
     display: block;
     margin-bottom: 10px;
-    color: #202d37;
+    color: #ffffff;
 }
+
 .group-data input,
-.group-data select{
+.group-data select {
     display: block;
     margin-bottom: 30px;
     width: 100%;
-} 
+    color: #ffffff;
+    background-color: #181818;
 
-form button{
+    border-radius: 8px;
+    box-shadow: 0 0 3em #000000;
+
+}
+
+form button {
     display: block;
     width: 97%;
     padding: 14px 80px;
-    background: #1c9882;
+    background: #b80000;
     color: #fff;
-    border: 1px solid #1c9882;
+    border: 1px solid #b80000;
     transition: .4s;
     cursor: pointer;
 }
 
-form button:hover{
-    background: #f5f8fa;
-    border: 1px solid #1c9882;
-    color: #1c9882;
+form button:hover {
+    background: #181818;
+    color: #000000;
 }
 
-input, select{
+input,
+select {
     padding: 14px 30px;
-    background: #f5f8fa;
+    background: #181818;
     border: 0;
-    border-bottom: 2px solid #7a93ab;
     outline: none;
 }
+
 input::placeholder {
-    color: #000; /* Cambia este valor al color que desees */
+    color: #ffffff;
+    /* Cambia este valor al color que desees */
 }
 
-.right .pre-simulation{
+.right .pre-simulation {
     width: 100%;
     height: 100%;
     position: relative;
@@ -125,8 +137,8 @@ input::placeholder {
     align-items: center;
 }
 
-.right img{
-    max-width: 80%;
+.right img {
+    width: 80%;
 }
 
 .right .post-simulation {
@@ -142,51 +154,55 @@ input::placeholder {
     display: none;
 }
 
-.right .post-simulation h3{
-    color: #202d37;
+.right .post-simulation h3 {
+    color: #ffffff;
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 40px;
 }
 
-.right .post-simulation h3 span{
-    color: #1c9882;
+.right .post-simulation h3 span {
+    color: #b80000;
     font-weight: 600;
     font-size: 24px;
 }
 
-.right .total{
-    background: #1c988259;
+.right .total {
+    background: #181818;
     padding: 30px;
 }
 
-.right .total h4{
+.right .total h4 {
     font-size: 28px;
+    color: #ffffff;
 }
 
-.right .total h2{
+.right .total h2 {
     font-size: 36px;
     padding: 14px 0;
 }
 
-.total p{
+.total p {
     font-weight: 400;
+    color: #ffffff;
 }
 
-.total p span{
+.total p span {
     font-weight: 600;
+    color: #ffffff;
 }
 
-.notificacion{
+.notificacion {
     padding: 20px;
-    border: 1px solid #1c9882;
     margin-top: 40px;
 }
 
-.notificacion h5{
+.notificacion h5 {
     font-weight: 400;
+    color: #ffffff;
 }
 
-.notificacion h5 span{
+.notificacion h5 span {
     font-weight: 700;
+    color: #ffffff;
 }
